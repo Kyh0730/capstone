@@ -1,3 +1,4 @@
+//로그인 페이지
 import { useRouter } from 'expo-router'; // useRouter 임포트
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import * as React from 'react';
@@ -46,7 +47,7 @@ export default function LoginScreen() {
         onPress={handleLogin}
         loading={loading}
         style={styles.button}
-        buttonColor="#ff8a3d"
+        buttonColor="#2E4D8A"
         textColor="#fff"
       >
         로그인
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#ff8a3d',
+    color: '#2E4D8A',
     marginBottom: 32,
     textAlign: 'center',
   },
